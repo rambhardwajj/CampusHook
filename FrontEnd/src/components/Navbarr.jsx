@@ -3,7 +3,7 @@ import {signOut} from "firebase/auth"
 import { auth } from '../firebase'
 import { AuthContext } from '../context/AuthContext'
 
-const Navbar = () => {
+const Navbarr = () => {
   const {currentUser} = useContext(AuthContext)
 
   return (
@@ -18,4 +18,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default Navbarr

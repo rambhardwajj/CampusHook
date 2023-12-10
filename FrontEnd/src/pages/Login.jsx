@@ -30,7 +30,7 @@ const Login = () => {
           <button>Sign in</button>
           {err && <span>Something went wrong</span>}
         </form>
-        <p>You don't have an account? <Link to="/forChat/egister">Register</Link></p>
+        <p>You dont have an account? <Link to="/forChat/register">Register</Link></p>
       </div>
     </div>
   );
