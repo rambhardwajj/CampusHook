@@ -1,15 +1,16 @@
-"use client"
 import React from 'react'
-import StudentLogin from './components/StudentLogin'
-import StudentSignUp from './components/StudentSignUp'
 import Navbar from './components/Navbar'
-
+import Main from './components/main'
+import About from './components/About'
+import Footer from './components/footer'
 
 const App = () => {
   return (
     <>
-      <StudentSignUp/>
-      <StudentLogin/>
+      <Main/>
+      <About/>
+      <Footer/>
+      <div>hi</div> 
     </>
   )
 }
