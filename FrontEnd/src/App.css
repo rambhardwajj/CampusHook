@@ -18,6 +18,13 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+
+/* Add this to your global styles or a specific component's styles */
+body {
+  font-family: 'Audiowide', sans-serif;
+}
+
+
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
