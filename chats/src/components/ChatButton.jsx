@@ -3,7 +3,7 @@ import { useNavigate, Link } from "react-router-dom";
 const ChatButton = ()=>{
     const navigate = useNavigate();
     function handleClick(){
-        navigate('/');
+        navigate('/forChat');
     }
     return <div>
         <button onClick={handleClick}> chat </button>
