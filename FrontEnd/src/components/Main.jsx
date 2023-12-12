@@ -3,6 +3,7 @@ import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import About from './About'
 import Footer from './Footer'
+import { useNavigate } from 'react-router-dom'
 
 const navigation = [
   { name: 'Home', href: '#' },
@@ -13,8 +14,12 @@ const navigation = [
 
 export default function Example() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-
+  const navigate = useNavigate();
+    function handleEvent(){
+        navigate('/forChat/login');
+    }
   return (
+    
     <>
     <div style={{ backgroundImage: 'url("https://images.pexels.com/photos/10117931/pexels-photo-10117931.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")' ,backgroundSize:"cover"  }} className="bg-white text-white mb-20">
       <header className="absolute inset-x-0 top-0 z-50">
@@ -44,7 +49,7 @@ export default function Example() {
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
             <a href="#" className="rounded-md bg-purple-400 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-purple-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
-              Log in <span aria-hidden="true">&rarr;</span>
+              <button onClick={handleEvent}> Log in  </button> <span aria-hidden="true">&rarr;</span>
             </a>
           </div>
         </nav>

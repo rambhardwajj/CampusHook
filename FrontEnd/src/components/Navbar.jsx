@@ -42,7 +42,7 @@ const Navbar = () => {
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
             <a href="#" className="rounded-md bg-purple-400 px-3.5 py-2.5 text-sm font-semibold text-black shadow-sm hover:bg-purple-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
-              Log in <span aria-hidden="true">&rarr;</span>
+              <button > Log in  </button>  <span aria-hidden="true">&rarr; </span>
             </a>
           </div>
         </nav>

@@ -1,7 +1,7 @@
 import { Fragment } from 'react'
 import { Menu, Transition } from '@headlessui/react'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
-
+import ChatButton from './ChatButton';
 
 const posts = [
   {
@@ -152,6 +152,37 @@ const posts = [
       }
     ]
   },
+  {
+    id: 6,
+    title: 'Google Develper Students Club',
+    href: '#',
+   description:
+      'Explore the world of data science with us! In our next club meeting, we will delve into various aspects of data analysis, machine learning, and artificial intelligence. Bring your curiosity and passion for data, and let\'s discover the insights hidden in the numbers together.',
+    date: 'Mar 18, 2020',
+    datetime: '2020-03-18',
+    category: { title: 'Technology', href: '#' },
+    author: {
+      name: 'Sahin',
+      role: 'Software Engineer',
+      href: '#',
+      imageUrl:
+        'https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=600',
+    },
+    members: [
+      {
+        id: 4,
+        name: "Alice",
+      },
+      {
+        id: 5,
+        name: "Bob",
+      },
+      {
+        id: 6,
+        name: "Charlie",
+      }
+    ]
+  },
 ];
 
   function classNames(...classes) {
@@ -160,6 +191,7 @@ const posts = [
   
   export default function Example() {
     return (
+      <div > 
       <div className="bg-white py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:mx-0">
@@ -238,6 +270,11 @@ const posts = [
           ))}
         </div>
       </div>
+    </div>
+    <div className=' text-center '>
+        <ChatButton />
+    </div>
+      
     </div>
   );
 }
